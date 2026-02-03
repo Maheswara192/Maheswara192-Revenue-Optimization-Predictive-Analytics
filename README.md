@@ -67,7 +67,7 @@ Each module demonstrates the ability to transform raw transactional data into ac
 ```
 Data Analysis/
 │
-├── Project 1/
+├── Superstore_Analytics/
 │   ├── Final_Portfolio_Project.py    # Master consolidated script
 │   ├── rfm_analysis.py                # Customer segmentation module
 │   ├── profit_loss_analysis.py       # Profitability analysis module
@@ -92,7 +92,7 @@ Data Analysis/
 ### Run the Complete Analysis
 
 ```bash
-python "Project 1/Final_Portfolio_Project.py"
+python "Superstore_Analytics/Final_Portfolio_Project.py"
 ```
 
 This will:
@@ -105,13 +105,13 @@ This will:
 
 ```bash
 # Customer Segmentation
-python "Project 1/rfm_analysis.py"
+python "Superstore_Analytics/rfm_analysis.py"
 
 # Profit Analysis
-python "Project 1/profit_loss_analysis.py"
+python "Superstore_Analytics/profit_loss_analysis.py"
 
 # Sales Forecasting
-python "Project 1/sales_forecasting.py"
+python "Superstore_Analytics/sales_forecasting.py"
 ```
 
 ---
