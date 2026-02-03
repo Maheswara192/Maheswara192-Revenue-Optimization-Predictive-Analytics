@@ -1,0 +1,45 @@
+Category,Sub-Category,Region,Total_Loss,Loss_Frequency,Avg_Discount
+Office Supplies,Binders,Central,-21909.398,233,0.8
+Technology,Machines,East,-13990.1903,15,0.7
+Furniture,Tables,East,-11046.347099999999,78,0.37564102564102564
+Furniture,Tables,South,-8840.7788,27,0.42037037037037034
+Office Supplies,Appliances,Central,-8629.6412,67,0.8
+Office Supplies,Binders,South,-8404.4739,132,0.7
+Technology,Machines,South,-7635.2291000000005,12,0.5
+Technology,Phones,East,-6715.78,97,0.4
+Furniture,Tables,Central,-6568.3553,49,0.3734693877551021
+Office Supplies,Binders,East,-5971.6431,171,0.7
+Furniture,Tables,West,-5956.6671,49,0.31020408163265306
+Furniture,Furnishings,Central,-5944.6552,138,0.6
+Technology,Machines,West,-5589.1288,8,0.7
+Furniture,Bookcases,East,-4722.0343,33,0.36363636363636365
+Furniture,Bookcases,West,-4223.6424,32,0.40781249999999997
+Furniture,Chairs,Central,-4094.3445,94,0.3
+Furniture,Bookcases,Central,-2947.0103,36,0.315
+Technology,Machines,Central,-2904.12,9,0.3888888888888889
+Furniture,Chairs,East,-2672.0466,58,0.2862068965517241
+Furniture,Chairs,West,-2390.3805,67,0.2
+Office Supplies,Storage,East,-2248.7379,47,0.2
+Office Supplies,Binders,West,-2224.9814,77,0.7
+Office Supplies,Storage,Central,-2076.1838,61,0.2
+Office Supplies,Supplies,East,-1561.7735,10,0.2
+Office Supplies,Storage,South,-1060.0824,31,0.2
+Office Supplies,Storage,West,-1041.2997,22,0.2
+Office Supplies,Supplies,Central,-860.2812,11,0.2
+Furniture,Chairs,South,-724.0697,16,0.2
+Technology,Phones,West,-605.2322,28,0.2
+Furniture,Furnishings,East,-361.3574,15,0.2
+Office Supplies,Supplies,West,-344.6123,5,0.2
+Technology,Accessories,East,-291.6619,24,0.20000000000000004
+Furniture,Bookcases,South,-259.519,8,0.2
+Office Supplies,Supplies,South,-248.9549,7,0.2
+Technology,Accessories,West,-242.2743,19,0.2
+Technology,Accessories,Central,-239.6935,34,0.2
+Technology,Accessories,South,-156.9968,14,0.2
+Technology,Phones,Central,-132.5407,6,0.20000000000000004
+Furniture,Furnishings,South,-97.6571,7,0.2
+Furniture,Furnishings,West,-87.24369999999999,7,0.2
+Technology,Phones,South,-77.0706,5,0.2
+Office Supplies,Fasteners,West,-15.4985,4,0.2
+Office Supplies,Fasteners,East,-9.035400000000001,5,0.2
+Office Supplies,Fasteners,Central,-8.6613,3,0.20000000000000004
