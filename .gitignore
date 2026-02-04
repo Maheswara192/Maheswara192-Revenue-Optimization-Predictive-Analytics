@@ -45,3 +45,21 @@ desktop.ini
 *.tmp
 *.bak
 *.log
+
+# SQL Database (Should be generated locally)
+*.db
+
+# Data files (Exclude large generated datasets)
+*.csv
+!Sample - Superstore.csv
+
+# Caches
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments
+vh/
+env/
+.env
+.venv

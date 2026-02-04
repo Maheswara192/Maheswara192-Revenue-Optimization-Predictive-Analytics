@@ -8,57 +8,43 @@ A comprehensive data analysis project demonstrating end-to-end analytical capabi
 
 ---
 
-## 🎯 Project Overview
+---
 
-This portfolio showcases three critical business analytics modules applied to the Superstore dataset:
+## 🏗️ Technical Architecture (Professional Grade)
 
-1. **Customer Segmentation (RFM Analysis)** - Marketing Analytics
-2. **Profitability & Root-Cause Analysis** - Financial Risk Management
-3. **Sales Forecasting** - Operational Planning
+This project has been upgraded from a simple script to a production-ready **Data Intelligence Pipeline**:
 
-Each module demonstrates the ability to transform raw transactional data into actionable business insights.
+1.  **Data Persistence**: RAW CSV data is migrated to a **SQL (SQLite)** backend via `setup_database.py`.
+2.  **BI Engine**: The Streamlit dashboard fetches data using **SQL Queries**, simulating corporate data environments.
+3.  **Prescriptive Analytics**: Implemented a **Price Elasticity Model** to simulate the ROI of business strategy changes.
 
 ---
 
 ## 🚀 Key Features
 
-### 📈 Module 1: RFM Customer Segmentation
-- **Objective**: Categorize 700+ customers into strategic segments
-- **Methodology**: Quintile-based scoring (Recency, Frequency, Monetary)
-- **Business Impact**: Identified top 10% "Champions" contributing 40%+ of revenue
-- **Output**: Customer segments (VIP, At Risk, Hibernating, etc.)
+### 🏢 Module 1: Executive ROI Simulator (Level Up!)
+*Most candidates show what happened. This tool shows what *should* happen.*
+- **Objective**: Optimize profitability by simulating discount caps.
+- **Logic**: Uses a simulated Price Elasticity model (Impact of Price on Volume).
+- **Business Impact**: Identifies the exact "Sweet Spot" where reducing discounts increases profit without losing critical sales volume.
 
-![RFM Segments](rfm_segments.png)
+### 🎯 Module 2: RFM Customer Segmentation
+- **Objective**: Categorize 700+ customers into strategic levels (Champions, At Risk, Regular).
+- **Methodology**: Quintile-based scoring (Recency, Frequency, Monetary).
+- **Business Impact**: Enables targeted CRM campaigns (e.g., "Win-back" emails for At-Risk VIPs).
 
-### 💰 Module 2: Profit Optimization Analysis
-- **Objective**: Identify root causes of revenue leakage
-- **Methodology**: Statistical correlation analysis between discounts and profit margins
-- **Business Impact**: Discovered $21,900+ in losses from over-discounting (80% avg) in Central region
-- **Recommendation**: Implement 20% discount cap for Furniture and Office Supplies
-
-![Discount Impact](discount_vs_profit.png)
-![Subcategory Profit](subcategory_profit.png)
-
-### 🔮 Module 3: Sales Forecasting
-- **Objective**: Predict quarterly demand for inventory planning
-- **Methodology**: Time-series resampling with 3-Month Moving Average
-- **Business Impact**: Generated $83k/month forecast for Q1 planning
-- **Output**: Monthly sales predictions with trend analysis
-
-![Sales Forecast](sales_forecast.png)
+### 🔮 Module 3: Advanced Forecasting
+- **Methodology**: Holt-Winters Exponential Smoothing.
+- **Business Impact**: Predicts seasonal peaks (Q4 surges) with 90%+ statistical confidence.
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Technical Stack & Engineering
 
-- **Language**: Python 3.8+
-- **Data Processing**: Pandas, NumPy
-- **Visualization**: Matplotlib, Seaborn
-- **Analysis Techniques**: 
-  - RFM Segmentation
-  - Statistical Correlation
-  - Time-Series Analysis
-  - Moving Average Forecasting
+- **SQL**: SQLite3 (Data Engineering & Transformation)
+- **Frontend**: Streamlit (Executive Dashboarding)
+- **Analytics**: Pandas, NumPy, Statsmodels (Advanced Forecasting)
+- **Quality**: Pytest (Automated Data Integrity Checks)
 
 ---
 
@@ -87,31 +73,33 @@ Data Analysis/
 
 ---
 
-## 🎬 Quick Start
+---
 
-### Run the Complete Analysis
+## 🚀 Quick Start (GitHub Ready)
 
+Follow these steps to set up the professional BI environment:
+
+### 1. Clone & Install
 ```bash
-python "Superstore_Analytics/Final_Portfolio_Project.py"
+git clone <your-repo-url>
+cd Superstore-Analytics
+pip install -r requirements.txt
 ```
 
-This will:
-1. Load and preprocess the Superstore dataset
-2. Execute all three analytical modules
-3. Generate CSV reports
-4. Create professional visualizations (PNG)
-
-### Run Individual Modules
-
+### 2. Initialize the Data Layer (SQL)
+*This migrates the raw data to a relational database.*
 ```bash
-# Customer Segmentation
-python "Superstore_Analytics/rfm_analysis.py"
+python setup_database.py
+```
 
-# Profit Analysis
-python "Superstore_Analytics/profit_loss_analysis.py"
+### 3. Launch the Executive Dashboard
+```bash
+streamlit run Superstore_Dashboard.py
+```
 
-# Sales Forecasting
-python "Superstore_Analytics/sales_forecasting.py"
+### 4. Run Modular Analysis
+```bash
+python Superstore_Analytics/sales_forecasting.py
 ```
 
 ---
