@@ -139,23 +139,65 @@ if 'first_visit' not in st.session_state:
 if st.session_state.first_visit:
     st.balloons()
     with st.container():
+        # Hero section with visual appeal
         st.markdown("""
-        # 👋 Welcome to the Superstore Business Intelligence Hub!
+        <div style='text-align: center; padding: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; color: white;'>
+            <h1 style='font-size: 3rem; margin-bottom: 10px;'>👋 Welcome to Your BI Hub!</h1>
+            <p style='font-size: 1.3rem; opacity: 0.9;'>Transform Data into Actionable Insights</p>
+        </div>
+        """, unsafe_allow_html=True)
         
-        This dashboard provides **real-time insights** into your business performance using:
-        - 📊 **Customer Segmentation** (RFM Analysis)
-        - 💰 **Profit Diagnostics** (Identify money pits)
-        - 📈 **Trend Analysis** (Historical patterns)
-        - 🚀 **ROI Simulator** (Prescriptive analytics for discount optimization)
+        st.markdown("<br>", unsafe_allow_html=True)
         
+        # Feature cards with icons
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.markdown("""
+            <div style='text-align: center; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+                <div style='font-size: 3rem;'>📊</div>
+                <h3 style='color: #1f77b4;'>Customer Segmentation</h3>
+                <p style='color: #666;'>RFM Analysis</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col2:
+            st.markdown("""
+            <div style='text-align: center; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+                <div style='font-size: 3rem;'>💰</div>
+                <h3 style='color: #2ca02c;'>Profit Diagnostics</h3>
+                <p style='color: #666;'>Find Money Pits</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown("""
+            <div style='text-align: center; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+                <div style='font-size: 3rem;'>📈</div>
+                <h3 style='color: #ff7f0e;'>Trend Analysis</h3>
+                <p style='color: #666;'>Historical Patterns</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col4:
+            st.markdown("""
+            <div style='text-align: center; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+                <div style='font-size: 3rem;'>🚀</div>
+                <h3 style='color: #d62728;'>ROI Simulator</h3>
+                <p style='color: #666;'>Prescriptive Analytics</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        st.info("""
         ### 🎯 Quick Start Guide:
-        1. Use the **sidebar filters** to select your analysis period and regions
-        2. Navigate through the **tabs** to explore different insights
-        3. Try the **ROI Simulator** to see how discount caps affect profitability
-        
-        ---
+        1. **Sidebar Filters** → Select your analysis period and regions
+        2. **Navigate Tabs** → Explore different insights
+        3. **ROI Simulator** → See how discount caps affect profitability
         """)
-        if st.button("🚀 Let's Get Started!"):
+        
+        if st.button("🚀 Let's Get Started!", use_container_width=True):
             st.session_state.first_visit = False
             st.rerun()
     st.stop()
@@ -232,6 +274,7 @@ st.markdown("### 📊 Key Performance Indicators")
 m1, m2, m3, m4 = st.columns(4)
 
 with m1:
+    st.markdown("<div style='text-align: center; font-size: 2rem;'>💵</div>", unsafe_allow_html=True)
     st.metric(
         "Total Revenue", 
         f"${f_df['Sales'].sum():,.0f}",
@@ -240,6 +283,7 @@ with m1:
 
 with m2:
     profit_margin = (f_df['Profit'].sum()/f_df['Sales'].sum())*100
+    st.markdown("<div style='text-align: center; font-size: 2rem;'>💎</div>", unsafe_allow_html=True)
     st.metric(
         "Net Profit", 
         f"${f_df['Profit'].sum():,.0f}", 
@@ -248,6 +292,7 @@ with m2:
     )
 
 with m3:
+    st.markdown("<div style='text-align: center; font-size: 2rem;'>👥</div>", unsafe_allow_html=True)
     st.metric(
         "Customer Base", 
         f"{f_df['Customer_ID'].nunique():,}",
@@ -255,6 +300,7 @@ with m3:
     )
 
 with m4:
+    st.markdown("<div style='text-align: center; font-size: 2rem;'>🏷️</div>", unsafe_allow_html=True)
     st.metric(
         "Avg Discount", 
         f"{f_df['Discount'].mean()*100:.1f}%",
