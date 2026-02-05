@@ -11,8 +11,8 @@ import sqlite3
 from datetime import datetime
 import sys
 
-# Import business logic from test suite
-from test_dashboard import calculate_rfm, calculate_roi_impact, validate_data
+# Import business logic from production module
+from dashboard_logic import calculate_rfm, calculate_roi_impact, validate_data
 
 # ============= CONFIGURATION =============
 
