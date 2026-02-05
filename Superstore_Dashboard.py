@@ -222,7 +222,8 @@ with tab4:
     mask_cap = sim_df['Discount'] > cap
     
     # Elasticity Logic 0.5
-    vol_loss = (sim_df.config_cap := sim_df.loc[mask_cap, 'Discount'] - cap) * 0.5
+    discount_reduction = sim_df.loc[mask_cap, 'Discount'] - cap
+    vol_loss = discount_reduction * 0.5
     
     sim_df.loc[mask_cap, 'New_Sales'] = sim_df.loc[mask_cap, 'Sales'] * (1 - vol_loss)
     sim_df['New_Sales'].fillna(sim_df['Sales'], inplace=True)
