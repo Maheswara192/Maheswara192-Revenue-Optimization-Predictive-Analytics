@@ -8,6 +8,36 @@ A comprehensive data analysis project demonstrating end-to-end analytical capabi
 
 ---
 
+## 🚀 Quick Start (Streamlit Cloud Deployment)
+
+### Option 1: Deploy to Streamlit Cloud (Recommended)
+
+1. **Fork this repository** to your GitHub account
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Click "New app"
+4. Select this repository and `main` branch
+5. Set main file path: `Superstore_Dashboard.py`
+6. Click "Deploy"!
+
+**Note**: The database will be automatically created on first run via `setup_database.py`.
+
+### Option 2: Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Initialize database
+python setup_database.py
+
+# Run dashboard
+streamlit run Superstore_Dashboard.py
+```
+
 ---
 
 ## 🏗️ Technical Architecture (Professional Grade)
@@ -17,6 +47,7 @@ This project has been upgraded from a simple script to a production-ready **Data
 1.  **Data Persistence**: RAW CSV data is migrated to a **SQL (SQLite)** backend via `setup_database.py`.
 2.  **BI Engine**: The Streamlit dashboard fetches data using **SQL Queries**, simulating corporate data environments.
 3.  **Prescriptive Analytics**: Implemented a **Price Elasticity Model** to simulate the ROI of business strategy changes.
+4.  **Enterprise Testing**: Comprehensive test suite with 20+ unit tests, edge cases, and integration tests.
 
 ---
 
