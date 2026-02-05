@@ -48,6 +48,7 @@ desktop.ini
 
 # SQL Database (Should be generated locally)
 *.db
+!superstore.db
 
 # Data files (Exclude large generated datasets)
 *.csv
