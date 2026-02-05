@@ -12,11 +12,40 @@ st.set_page_config(
     layout="wide",
 )
 
-# Custom CSS for Premium Look
+# Custom CSS for Premium Look with Enhanced Visibility
 st.markdown("""
 <style>
     .main { background-color: #f0f2f6; }
-    .stMetric { background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    
+    /* Enhanced Metric Card Styling */
+    .stMetric { 
+        background-color: #ffffff; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        border-left: 4px solid #1f77b4;
+    }
+    
+    /* Make metric values highly visible */
+    [data-testid="stMetricValue"] {
+        color: #0e1117 !important;
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Make metric labels visible */
+    [data-testid="stMetricLabel"] {
+        color: #31333F !important;
+        font-weight: 600 !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Make delta values visible */
+    [data-testid="stMetricDelta"] {
+        color: #09ab3b !important;
+        font-weight: 600 !important;
+    }
+    
     h1, h2, h3 { color: #0e1117; font-family: 'Inter', sans-serif; }
     .highlight { color: #ff4b4b; font-weight: bold; }
 </style>
