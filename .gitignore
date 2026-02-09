@@ -64,3 +64,6 @@ vh/
 env/
 .env
 .venv
+
+# Docker (keep configuration files, ignore runtime data)
+data/

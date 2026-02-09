@@ -1,4 +1,4 @@
-# 🚀 Executive Summary: Superstore Business Intelligence Suite
+ # 🚀 Executive Summary: Superstore Business Intelligence Suite
 
 ## 📄 Project Overview
 This project is an **Enterprise-Grade Data Analysis Portfolio** that transforms raw retail data into actionable business strategies. Unlike standard analysis scripts, this solution mimics a real-world corporate data pipeline, integrating **Data Engineering**, **Machine Learning**, and **Prescriptive Analytics**.

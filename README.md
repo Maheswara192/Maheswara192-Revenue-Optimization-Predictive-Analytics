@@ -8,6 +8,62 @@ A comprehensive data analysis project demonstrating end-to-end analytical capabi
 
 ---
 
+## 🐳 Docker Deployment (Recommended for Local Development)
+
+### Prerequisites
+- [Docker](https://docs.docker.com/get-docker/) installed on your machine
+- [Docker Compose](https://docs.docker.com/compose/install/) (usually included with Docker Desktop)
+
+### Quick Start with Docker
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Maheswara192/superstore-analytics-portfolio.git
+   cd superstore-analytics-portfolio
+   ```
+
+2. **Run with Docker Compose** (one command!):
+   ```bash
+   docker-compose up
+   ```
+
+3. **Access the dashboard**:
+   - Open your browser to: **http://localhost:8501**
+   - The database will be automatically created on first run
+
+4. **Stop the application**:
+   ```bash
+   # Press Ctrl+C in the terminal, then run:
+   docker-compose down
+   ```
+
+### Docker Commands Reference
+
+```bash
+# Build and run in detached mode (background)
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop containers
+docker-compose down
+
+# Rebuild after code changes
+docker-compose up --build
+
+# Remove all containers and volumes
+docker-compose down -v
+```
+
+### Troubleshooting Docker
+
+- **Port already in use**: Change the port mapping in `docker-compose.yml` from `8501:8501` to `8502:8501`
+- **Database issues**: Run `docker-compose down -v` to remove volumes and start fresh
+- **Build errors**: Ensure Docker has enough memory allocated (Settings → Resources → Memory: 4GB+)
+
+---
+
 ## 🚀 Quick Start (Streamlit Cloud Deployment)
 
 ### Option 1: Deploy to Streamlit Cloud (Recommended)
